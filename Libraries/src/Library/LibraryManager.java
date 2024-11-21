@@ -28,7 +28,7 @@ public class LibraryManager implements LibraryService {
      */
     @Override
     public void addBook(Book book) {
-        // Проверяем, что название книги не пустое
+
         if (book.getTitle() == null || book.getTitle().trim().isEmpty()) {
             System.out.println("Error: Book title cannot be empty.");
             return; //Exit the method if the name is empty
